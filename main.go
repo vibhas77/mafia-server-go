@@ -3,8 +3,8 @@ package main
 import (
 	_ "database/sql"
 
-	"mafia-server-go/db"
-	"github.com/go-postgres-jwt-react-starter/server/router"
+	"github.com/vibhas77/mafia-server-go/db"
+	"github.com/vibhas77/mafia-server-go/router"
 
 	_ "github.com/lib/pq"
 )
