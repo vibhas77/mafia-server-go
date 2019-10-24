@@ -1,8 +1,8 @@
 package router
 
 import (
-	"github.com/go-postgres-jwt-react-starter/server/controller"
-	"github.com/go-postgres-jwt-react-starter/server/middlewares"
+	"github.com/vibhas77/mafia-server-go/controller"
+	"github.com/vibhas77/mafia-server-go/middlewares"
 
 	"github.com/gin-gonic/gin"
 )

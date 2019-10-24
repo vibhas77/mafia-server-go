@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-postgres-jwt-react-starter/server/db"
-	"github.com/go-postgres-jwt-react-starter/server/errors"
-	"github.com/go-postgres-jwt-react-starter/server/utils"
+	"github.com/vibhas77/mafia-server-go/db"
+	"github.com/vibhas77/mafia-server-go/errors"
+	"github.com/vibhas77/mafia-server-go/utils"
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"

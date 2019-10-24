@@ -5,7 +5,7 @@ package middlewares
 import (
 	"net/http"
 
-	"github.com/go-postgres-jwt-react-starter/server/config"
+	"github.com/vibhas77/mafia-server-go/config"
 
 	"github.com/gin-gonic/gin"
 )

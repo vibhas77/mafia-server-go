@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/go-postgres-jwt-react-starter/server/config"
+	"github.com/vibhas77/mafia-server-go/config"
 )
 
 //DB instance
