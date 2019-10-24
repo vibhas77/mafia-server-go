@@ -1,0 +1,21 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: docker
+    ports:
+      - 5432:5432
+  mafia-server-go:
+    build: .
+    command: ["go", "run", "main.go"]
+    volumes:
+      - .:/go/src/github.com/vibhas77/mafia-server-go
+    ports:
+      - "80:8080"
+    depends_on:
+      - db
+    links:
+      - db
