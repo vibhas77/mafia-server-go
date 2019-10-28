@@ -16,4 +16,4 @@ RUN apt-get install -y vim postgresql-client-11
 
 #ENTRYPOINT /bin/bash
 
-#CMD ["go", "run", "main.go"]
+CMD ["go", "run", "main.go"]

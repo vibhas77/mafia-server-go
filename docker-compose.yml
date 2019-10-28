@@ -10,13 +10,14 @@ services:
     ports:
       - 5432:5432
     volumes:
-      - /home/vigo/docker/volumes/postgres:/var/lib/postgresql/data
+      #  mkdir -p $HOME/docker/volumes/postgres
+      - $HOME/docker/volumes/postgres:/var/lib/postgresql/data
 
   mafia-server-go:
     build: .
     ports:
       - "8080:8081"
-#    depends_on:
-#      - db
+    depends_on:
+      - db
     links:
       - db
