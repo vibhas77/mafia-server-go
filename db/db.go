@@ -13,11 +13,12 @@ var DB *sql.DB
 
 //Connect to db
 func Connect() {
-	dbinfo := fmt.Sprintf("user=%s password=%s dbname=%s sslmode=disable", config.DB_USER, config.DB_PASSWORD, config.DB_NAME)
+	dbinfo := fmt.Sprintf("host=%s user=%s port=5432 password=%s dbname=%s sslmode=disable",config.DB_HOST, config.DB_USER, config.DB_PASSWORD, config.DB_NAME)
 
 	db, _ := sql.Open("postgres", dbinfo)
 	err := db.Ping()
 	if err != nil {
+		log.Fatal(err)
 		log.Fatal("Error: Could not establish a connection with the database")
 	}
 	DB = db
