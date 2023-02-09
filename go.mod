@@ -4,14 +4,9 @@ go 1.13
 
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
-	github.com/gin-contrib/sse v0.1.0 // indirect
-	github.com/gin-gonic/gin v1.4.0
-	github.com/golang/protobuf v1.3.2 // indirect
-	github.com/json-iterator/go v1.1.7 // indirect
+	github.com/gin-gonic/gin v1.7.7
 	github.com/lib/pq v1.2.0
-	github.com/mattn/go-isatty v0.0.10 // indirect
-	github.com/ugorji/go v1.1.7 // indirect
-	golang.org/x/crypto v0.0.0-20191011191535-87dc89f01550
-	golang.org/x/sys v0.0.0-20191023151326-f89234f9a2c2 // indirect
-	gopkg.in/yaml.v2 v2.2.4 // indirect
+	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
+	github.com/modern-go/reflect2 v1.0.1 // indirect
+	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
 )
